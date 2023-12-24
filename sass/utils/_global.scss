@@ -1,0 +1,54 @@
+// border-radius: 180px;
+// background: linear-gradient(180deg, #7F1CFC 0%, #59DCDC 100%);
+// filter: blur(50px);
+// font-family: 'Inter',sans-serif;
+// font-family: 'Red Hat Display',sans-serif;
+// font-family: 'Red Rose',serif;
+// font-family: "Monument Extended Bold";
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url("../../fonts/Gilroy-Extrabold.woff2");
+}
+@font-face {
+  font-family: 'Monument', sans-serif;
+  src: url("../../fonts/MonumentExtended-Ultrabold.otf");
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Red Rose', serif;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+body {
+  background-color: $black-color;
+  color: $white-text-color;
+  
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+[class*=__container] {
+  max-width: 1650px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  // width: 180px;
+  padding: 15px 0;
+  background-color: $light-blue-color;
+  border-radius: 50px;
+}

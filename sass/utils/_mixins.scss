@@ -1,0 +1,17 @@
+@mixin on801 {
+  @media (min-width: 801px) {
+    @content;
+  }
+}
+
+@mixin on800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin on375 {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
