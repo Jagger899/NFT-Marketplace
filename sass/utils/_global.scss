@@ -25,6 +25,7 @@ html {
 body {
   background-color: $black-color;
   color: $white-text-color;
+  overflow-x: hidden;
   
 }
 
@@ -63,4 +64,10 @@ a {
 
 .main {
   margin-top: 165px;
+}
+
+@media (max-width:375px) {
+  .main {
+    margin-top: 155px;
+  }
 }
