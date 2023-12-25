@@ -231,7 +231,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 3;
+  z-index: 7;
 }
 @media (max-width: 375px) {
   .header {
@@ -379,30 +379,36 @@ a {
 .collect__container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .collect__left {
   max-width: 704px;
+  margin-top: 90px;
+  margin-left: 13px;
 }
 .collect__subtitle {
-  margin-bottom: 16px;
-  text-transform: uppercase;
+  margin-bottom: 26px;
+  letter-spacing: 1.44px;
 }
 .collect__title {
   font-size: 72px;
-  margin-bottom: 72px;
+  margin-bottom: 35px;
   text-transform: uppercase;
+  letter-spacing: 2.88px;
+  line-height: 115%;
 }
 .collect__descr-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 10px;
+  width: 582px;
+  margin-bottom: 51px;
 }
 .collect__button {
   font-family: "Red Rose", serif;
   font-weight: 700;
   font-size: 18px;
+  padding: 21px 0 22px;
 }
 .collect__user:nth-child(2) {
   transform: translateX(-32px);
@@ -411,12 +417,13 @@ a {
   transform: translateX(-64px);
 }
 .collect__arrow {
-  transform: translate(-165px, 35px);
+  transform: translate(-105px, 44px);
 }
 .collect__advantages-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 505px;
 }
 .collect__advantages-list-container {
   display: flex;
@@ -425,6 +432,7 @@ a {
 }
 .collect__advantages-list-number {
   font-size: 30px;
+  margin-bottom: 13px;
 }
 .collect__advantages-list-text {
   font-family: "Red Rose", serif;
@@ -456,8 +464,12 @@ a {
   width: 200px;
   height: 200px;
   background-color: rgba(129, 134, 152, 0.2);
+  backdrop-filter: blur(25px);
   border-radius: 50%;
   position: relative;
+  transform: translate(-49%, -90%);
+  position: relative;
+  z-index: 6;
 }
 .collect__info-text {
   font-size: 16px;
@@ -476,8 +488,112 @@ a {
   width: 0;
 }
 
-.first {
+.b_1 {
   transform: rotate(18.91deg);
+  top: 13px;
+  right: 94px;
+}
+
+.b_2 {
+  transform: rotate(36.957deg);
+  top: 19px;
+  right: 76px;
+}
+
+.b_3 {
+  transform: rotate(53.699deg);
+  top: 25px;
+  right: 65px;
+}
+
+.b_4 {
+  transform: rotate(83.198deg);
+  top: 60px;
+  right: 36px;
+}
+
+.b_5 {
+  transform: rotate(103.395deg);
+  top: 112px;
+  right: 12px;
+}
+
+.b_6 {
+  transform: rotate(121.466deg);
+  top: 140px;
+  right: 20px;
+}
+
+.b_7 {
+  transform: rotate(139.537deg);
+  top: 161px;
+  right: 34px;
+}
+
+.b_8 {
+  transform: rotate(157.076deg);
+  top: 178px;
+  right: 57px;
+}
+
+.b_9 {
+  transform: rotate(173.818deg);
+  top: 187px;
+  right: 81px;
+}
+
+.b_10 {
+  transform: rotate(-168.908deg);
+  top: 189px;
+  right: 107px;
+}
+
+.b_11 {
+  transform: rotate(-152.697deg);
+  top: 183px;
+  right: 133px;
+}
+
+.b_12 {
+  transform: rotate(-135.423deg);
+  top: 170px;
+  right: 152px;
+}
+
+.b_13 {
+  transform: rotate(-116.821deg);
+  top: 150px;
+  right: 170px;
+}
+
+.b_14 {
+  transform: rotate(-99.813deg);
+  top: 124px;
+  right: 183px;
+}
+
+.b_15 {
+  transform: rotate(-72.175deg);
+  top: 76px;
+  right: 174px;
+}
+
+.b_16 {
+  transform: rotate(-54.635deg);
+  top: 46px;
+  right: 152px;
+}
+
+.b_17 {
+  transform: rotate(-38.69deg);
+  top: 32px;
+  right: 139px;
+}
+
+.b_18 {
+  transform: rotate(-21.682deg);
+  top: 22px;
+  right: 126px;
 }
 
 /*# sourceMappingURL=main.css.map */
