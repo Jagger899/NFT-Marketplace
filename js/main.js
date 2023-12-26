@@ -25,3 +25,27 @@ mobileMenu.addEventListener('click', function (event) {
     header.classList.remove('header_active');
   }
 })
+
+const swiper1 = new Swiper('.categories__slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: '.categories__swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

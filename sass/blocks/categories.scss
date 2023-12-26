@@ -1,0 +1,76 @@
+.categories {
+  margin-top: -77px;
+  margin-left: 13px;
+  // overflow: hidden;
+  position: relative;
+
+  &__container {
+    // max-width: 1720px;
+  }
+
+  @include on1899 {
+    margin-top: 0;
+  }
+  &__title {
+    margin-bottom: 75px;
+  }
+
+  &__card {
+    background-color: $light-black-color;
+    width: 245px;
+    padding: 10px 0 51px;
+    border-radius: 50px;
+  }
+
+  &__card-photo {
+    margin: 0 auto 51px;
+    width: 225px;
+  }
+
+  &__card-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__slider {
+    position: static;
+  }
+
+  &__swiper-pagination {
+    display: none;
+  }
+
+  &__swiper-wrapper {
+    position: static;
+  }
+
+  &__swiper-slide {
+    position: static;
+  }
+}
+
+.swiper-button-left,
+.swiper-button-right {
+  width: 70px;
+  height: 70px;
+  background-color: $light-black-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-left {
+  position: absolute;
+  left: 100px;
+  top: 54%;
+  z-index: 10;
+}
+
+.swiper-button-right {
+  position: absolute;
+  right: 100px;
+  top: 54%;
+}
+
+

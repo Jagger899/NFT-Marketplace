@@ -231,6 +231,14 @@ a {
     margin-top: 155px;
   }
 }
+.section__title {
+  font-size: 30px;
+  font-family: "Monument Extended Bold", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+}
+
 .header {
   padding: 37px 0;
   position: fixed;
@@ -829,6 +837,70 @@ a {
   transform: rotate(-21.682deg);
   top: 22px;
   right: 126px;
+}
+
+.categories {
+  margin-top: -77px;
+  margin-left: 13px;
+  position: relative;
+}
+@media (max-width: 1899px) {
+  .categories {
+    margin-top: 0;
+  }
+}
+.categories__title {
+  margin-bottom: 75px;
+}
+.categories__card {
+  background-color: #2C2D31;
+  width: 245px;
+  padding: 10px 0 51px;
+  border-radius: 50px;
+}
+.categories__card-photo {
+  margin: 0 auto 51px;
+  width: 225px;
+}
+.categories__card-title {
+  font-size: 24px;
+  text-align: center;
+}
+.categories__slider {
+  position: static;
+}
+.categories__swiper-pagination {
+  display: none;
+}
+.categories__swiper-wrapper {
+  position: static;
+}
+.categories__swiper-slide {
+  position: static;
+}
+
+.swiper-button-left,
+.swiper-button-right {
+  width: 70px;
+  height: 70px;
+  background-color: #2C2D31;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-left {
+  position: absolute;
+  left: 100px;
+  top: 54%;
+  z-index: 10;
+}
+
+.swiper-button-right {
+  position: absolute;
+  right: 100px;
+  top: 54%;
 }
 
 /*# sourceMappingURL=main.css.map */
