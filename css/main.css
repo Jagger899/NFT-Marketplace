@@ -239,6 +239,12 @@ a {
   letter-spacing: 1.7px;
 }
 
+@media (max-width: 480px) {
+  .section__title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
 .header {
   padding: 37px 0;
   position: fixed;
@@ -395,6 +401,16 @@ a {
   font-family: "Monument Extended Bold", sans-serif;
   font-weight: 400;
   font-size: 36px;
+}
+@media (max-width: 1250px) {
+  .collect {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .collect {
+    margin-bottom: 30px;
+  }
 }
 .collect__container {
   display: flex;
@@ -842,7 +858,21 @@ a {
 .categories {
   margin-top: -77px;
   margin-left: 13px;
+  margin-bottom: 120px;
+}
+@media (max-width: 1899px) {
+  .categories {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+.categories__container {
   position: relative;
+}
+@media (max-width: 1450px) {
+  .categories__container {
+    padding: 0 0 0 35px;
+  }
 }
 @media (max-width: 1899px) {
   .categories {
@@ -852,11 +882,23 @@ a {
 .categories__title {
   margin-bottom: 75px;
 }
+@media (max-width: 480px) {
+  .categories__title {
+    margin-bottom: 24px;
+    line-height: 152%;
+  }
+}
+@media (max-width: 375px) {
+  .categories__title {
+    margin-right: 40px;
+  }
+}
 .categories__card {
   background-color: #2C2D31;
   width: 245px;
   padding: 10px 0 51px;
   border-radius: 50px;
+  margin-bottom: 40px;
 }
 .categories__card-photo {
   margin: 0 auto 51px;
@@ -871,6 +913,24 @@ a {
 }
 .categories__swiper-pagination {
   display: none;
+}
+@media (max-width: 1450px) {
+  .categories__swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.categories__swiper-pagination .swiper-pagination-bullet {
+  border-radius: 16px;
+  border: 1px solid #FFF;
+  width: 16px;
+  height: 16px;
+}
+.categories__swiper-pagination .swiper-pagination-bullet-active {
+  border-radius: 16px;
+  background: #7F1CFC;
+  border: none;
 }
 .categories__swiper-wrapper {
   position: static;
@@ -889,18 +949,24 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1450px) {
+  .swiper-button-left,
+  .swiper-button-right {
+    display: none;
+  }
+}
 
 .swiper-button-left {
   position: absolute;
-  left: 100px;
-  top: 54%;
+  left: -15px;
+  top: 50%;
   z-index: 10;
 }
 
 .swiper-button-right {
   position: absolute;
-  right: 100px;
-  top: 54%;
+  right: -22px;
+  top: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

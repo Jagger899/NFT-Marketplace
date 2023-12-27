@@ -3,6 +3,14 @@
   font-weight: 400;
   font-size: 36px;
 
+  @include on1250 {
+    margin-bottom: 120px;
+  }
+
+  @include on480 {
+    margin-bottom: 30px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;

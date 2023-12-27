@@ -7,6 +7,18 @@ const secondLine = document.getElementById('second-line');
 console.log(secondLine)
 const thirdLine = document.getElementById('third-line');
 console.log(thirdLine)
+const screenWidth = window.screen.width;
+console.log(screenWidth);
+const slides = document.querySelectorAll('.categories__swiper-slide');
+console.log(slides.length);
+const wrapper = document.querySelector('.swiper-wrapper');
+console.log(wrapper.childNodes)
+
+window.addEventListener('resize', function(){
+  console.log(screenWidth)
+})
+
+// console.log(slides.length)
 
 mobileMenu.addEventListener('click', function (event) {
   event.preventDefault();
@@ -30,12 +42,67 @@ const swiper1 = new Swiper('.categories__slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 6,
-  spaceBetween: 30,
+  breakpoints:{
+    0: {
+      slidesPerView: 1.4,
+      spaceBetween:40,
+    },
+    400: {
+      slidesPerView: 1.5,
+      spaceBetween:20,
+    },
+    500: {
+      slidesPerView: 1.8,
+      spaceBetween:20,
+    },
+    600: {
+      slidesPerView: 2.2,
+      spaceBetween:20,
+    },
+    700: {
+      slidesPerView: 2.5,
+      spaceBetween:20,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween:10,
+    },
+    900: {
+      slidesPerView: 3.5,
+      spaceBetween:10,
+    },
+    1000: {
+      slidesPerView: 3.8,
+      spaceBetween:10,
+    },
+    1100: {
+      slidesPerView: 4, 
+      spaceBetween:20,
+    },
+    1200: {
+      slidesPerView: 4.5,
+      spaceBetween:20,
+    },
+    1200: {
+      slidesPerView: 4.8,
+      spaceBetween:20,
+    },
+    1400: {
+      slidesPerView: 5,
+      spaceBetween:10,
+    },
+    1700: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+    }
+  },
+
 
   // If we need pagination
   pagination: {
     el: '.categories__swiper-pagination',
+    clickable: true,
+    // dynamicBullets: true,
   },
 
   // Navigation arrows

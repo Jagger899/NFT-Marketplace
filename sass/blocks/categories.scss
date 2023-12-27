@@ -2,10 +2,21 @@
   margin-top: -77px;
   margin-left: 13px;
   // overflow: hidden;
-  position: relative;
+  margin-bottom: 120px;
+
+  @include on1899 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
 
   &__container {
     // max-width: 1720px;
+    position: relative;
+
+    @include on1450 {
+      padding: 0 0 0 35px;
+    }
   }
 
   @include on1899 {
@@ -13,6 +24,15 @@
   }
   &__title {
     margin-bottom: 75px;
+
+    @include on480 {
+      margin-bottom: 24px;
+      line-height: 152%;
+    }
+
+    @include on375 {
+      margin-right: 40px;
+    }
   }
 
   &__card {
@@ -20,6 +40,7 @@
     width: 245px;
     padding: 10px 0 51px;
     border-radius: 50px;
+    margin-bottom: 40px;
   }
 
   &__card-photo {
@@ -38,6 +59,29 @@
 
   &__swiper-pagination {
     display: none;
+
+    @include on1450 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__swiper-pagination .swiper-pagination-bullet{
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    width: 16px;
+    height: 16px;
+  }
+
+  // &__swiper-pagination .swiper-pagination-bullet:nth-child(-n + 4){
+  //  display: none;
+  // }
+
+  &__swiper-pagination .swiper-pagination-bullet-active {
+    border-radius: 16px;
+    background: #7F1CFC;
+    border: none;
   }
 
   &__swiper-wrapper {
@@ -46,6 +90,18 @@
 
   &__swiper-slide {
     position: static;
+
+    // &:nth-child(-n + 4) {
+    //   @include on480 {
+    //     display: none;
+    //   }
+    // } 
+
+    // &_del {
+    //   @include on480 {
+    //     display: none;
+    //   }
+    // }
   }
 }
 
@@ -58,19 +114,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include on1450 {
+    display: none;
+  }
 }
 
 .swiper-button-left {
   position: absolute;
-  left: 100px;
-  top: 54%;
+  left: -15px;
+  top: 50%;
   z-index: 10;
 }
 
 .swiper-button-right {
   position: absolute;
-  right: 100px;
-  top: 54%;
+  right: -22px;
+  top: 50%;
 }
 
 

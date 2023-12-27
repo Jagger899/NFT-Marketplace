@@ -80,6 +80,14 @@ a {
   letter-spacing: 1.7px;
 }
 
+@media (max-width:480px) {
+  .section__title {
+    font-size: 24px;
+    text-align: center;
+    
+  }
+}
+
 .swiper {
   // width: 100%;
   // overflow-x: visible;
