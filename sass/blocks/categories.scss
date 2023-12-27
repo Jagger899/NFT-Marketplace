@@ -2,11 +2,19 @@
   margin-top: -77px;
   margin-left: 13px;
   // overflow: hidden;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 
   @include on1899 {
     margin-top: 0;
     margin-left: 0;
+  }
+
+  @include on1700 {
+    padding: 0 30px;
+  }
+
+  @include on1450 {
+    padding: 0;
   }
   
 
@@ -131,6 +139,10 @@
   position: absolute;
   right: -22px;
   top: 50%;
+
+  @include on1700 {
+    right: 40px;
+  }
 }
 
 
