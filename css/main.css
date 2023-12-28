@@ -252,12 +252,14 @@ a {
   right: 0;
   left: 0;
   z-index: 7;
-  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   transition: background-color 300ms linear;
 }
 .header_active {
   background-color: #000;
+}
+.header_fixed {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 375px) {
   .header {

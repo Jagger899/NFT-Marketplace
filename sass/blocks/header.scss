@@ -5,12 +5,15 @@
   right: 0;
   left: 0;
   z-index: 7;
-  background-color: rgba(0,0,0,0.4);
+  // background-color: rgba(0,0,0,0.4);
   width: 100%;
   transition: background-color 300ms linear;
 
   &_active {
     background-color: #000;
+  }
+  &_fixed {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   @include on375 {

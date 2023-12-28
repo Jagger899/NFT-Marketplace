@@ -21,6 +21,16 @@ const topsUsers = document.querySelectorAll('.tops__users');
 // })
 
 // console.log(slides.length)
+window.addEventListener('scroll', function () {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    header.classList.add('header_fixed');
+  } else {
+    header.classList.remove('header_fixed');
+  }
+
+});
 
 mobileMenu.addEventListener('click', function (event) {
   event.preventDefault();
