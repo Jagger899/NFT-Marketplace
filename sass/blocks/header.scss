@@ -9,11 +9,13 @@
   width: 100%;
   transition: background-color 300ms linear;
 
-  &_active {
-    background-color: #000;
-  }
+
   &_fixed {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &_active {
+    background-color: #000;
   }
 
   @include on375 {
@@ -123,7 +125,7 @@
     position: fixed;
     background-color: #000;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(51, 51, 51, 0.4)),
-      url("../images/header/header-mobile.jpg");
+      url("../images/Header/header-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     top: 130px;

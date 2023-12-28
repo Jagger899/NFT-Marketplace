@@ -255,11 +255,11 @@ a {
   width: 100%;
   transition: background-color 300ms linear;
 }
-.header_active {
-  background-color: #000;
-}
 .header_fixed {
   background-color: rgba(0, 0, 0, 0.4);
+}
+.header_active {
+  background-color: #000;
 }
 @media (max-width: 375px) {
   .header {
@@ -355,7 +355,7 @@ a {
 .header__mobile-menu-list {
   position: fixed;
   background-color: #000;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(51, 51, 51, 0.4)), url("../images/header/header-mobile.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(51, 51, 51, 0.4)), url("../images/Header/header-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   top: 130px;
