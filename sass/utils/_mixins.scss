@@ -17,6 +17,12 @@
   }
 }
 
+@mixin on1500 {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin on1450 {
   @media (max-width: 1450px) {
     @content;
@@ -35,6 +41,19 @@
   }
 }
 
+@mixin on1050 {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin on900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+
 @mixin on801 {
   @media (min-width: 801px) {
     @content;
@@ -46,6 +65,13 @@
     @content;
   }
 }
+
+@mixin on700 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
 
 @mixin on650 {
   @media (max-width: 650px) {

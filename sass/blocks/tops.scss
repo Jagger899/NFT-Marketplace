@@ -1,10 +1,19 @@
 .tops {
   background-color: $middle-black-color;
-  padding: 120px 0 208px;
+  padding: 120px 15px 208px;
   font-size: 16px;
 
+  @include on480 {
+    padding: 0;
+    background-color: $black-color;
+  }
+
   &__container {
-    padding: 0 8px 0 27px;
+    padding: 0 8px 0 22px;
+
+    @include on1899 {
+      padding: 0 15px;
+    }
   }
 
   &__top-box {
@@ -12,6 +21,36 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 48px;
+
+    @include on700 {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include on700 {
+      text-align: center;
+    }
+
+    @include on375 {
+      max-width: 200px;
+    }
+  }
+
+  &__title-mobile {
+    display: none;
+
+    @include on480 {
+      display: block;
+      font-size: 24px;
+      font-family: "Monument Extended Bold";
+      text-align: center;
+      text-transform: uppercase;
+      max-width: 206px;
+      margin: 0 auto 24px;
+      line-height: 150%;
+      
+    }
   }
 
   &__buttons {
@@ -22,6 +61,9 @@
     display: flex;
     position: relative;
     height: 70px;
+    @include on700 {
+      display: none;
+    }
   }
 
   &__button {
@@ -59,6 +101,33 @@
     }
   }
 
+  &__users {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 66px;
+
+    @include on1500 {
+      display: grid;
+      grid-template-columns: 480px 480px;
+      justify-content: center;
+    }
+
+    @include on1050 {
+      display: flex;
+    }
+
+    @include on480 {
+      margin-bottom: 46px;
+    }
+
+    @include on375 {
+      gap: 8px;
+    }
+
+
+  }
+  
   &__card {
     width: 520px;
     background-color: $light-black-color;
@@ -67,12 +136,56 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px 10px 10px;
+
+    @include on1700 {
+      width: 460px;
+    }
+
+    @include on1500 {
+      &:nth-child(-n + 4) {
+        display: none;
+      }
+    }
+
+    @include on1150 {
+      &:nth-child(-n + 6) {
+        display: none;
+      }
+    }
+
+    @include on1050 {
+      width: 400px;
+    }
+
+    @include on900 {
+      max-width: 520px;
+    }
+
+    @include on480 {
+      flex-direction: column;
+      border-radius: 20px;
+      &:nth-child(-n+9) {
+        display: none;
+      }
+    }
+
+    @include on375 {
+      width: 327px;
+      padding-bottom: 17px;
+    }
   }
 
   &__card-left {
     display: flex;
     align-items: center;
     gap: 24px;
+  }
+
+  &__card-right {
+   @include on480 {
+    margin-left:38px;
+    margin-top: -10px;
+   }
   }
 
   &__card-photo {
@@ -96,6 +209,10 @@
   &__card-title {
     font-size: 24px;
     margin-bottom: 10px;
+
+    @include on480 {
+      white-space: nowrap;
+    }
   }
 
   &__card-text-floor {
@@ -114,5 +231,14 @@
   &__card-text-perc {
     color: $light-blue-color;
     font-size: 14px;
+  }
+
+  &__users-button {
+    margin: 0 auto;
+    width: 180px;
+    
+    @include on480 {
+      color: $white-text-color;
+    }
   }
 }

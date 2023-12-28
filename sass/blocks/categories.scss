@@ -16,6 +16,10 @@
   @include on1450 {
     padding: 0;
   }
+
+  @include on375 {
+    margin-bottom: 83px;
+  }
   
 
   &__container {
