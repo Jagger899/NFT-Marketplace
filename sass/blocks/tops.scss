@@ -79,33 +79,43 @@
     position: absolute;
 
 
-    &:hover {
-      background-color: $middle-black-color;
-    }
+    // &:hover {
+    //   background-color: $middle-black-color;
+    // }
 
     &_second {
       top: 5px;
       right: 5px;
 
-      &:hover {
-        z-index: 2;
-      }
-      &:checked {
-        z-index: 2;
-      }
+      // &:hover {
+      //   z-index: 2;
+      // }
+      // &:checked {
+      //   z-index: 2;
+      // }
     }
+
     &_first{
       z-index: 1;
       top: 5px;
       left: 5px;
     }
+
+    &_active {
+      background-color: $middle-black-color;
+      z-index: 2;
+    }
   }
 
   &__users {
-    display: flex;
-    gap: 30px;
+    display: none;
+    gap: 27px 30px;
     flex-wrap: wrap;
-    margin-bottom: 66px;
+    margin-bottom: 72px;
+
+    &_active {
+      display: flex;
+    }
 
     @include on1500 {
       display: grid;

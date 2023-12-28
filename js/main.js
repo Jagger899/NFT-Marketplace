@@ -10,13 +10,15 @@ console.log(thirdLine)
 const screenWidth = window.screen.width;
 console.log(screenWidth);
 const slides = document.querySelectorAll('.categories__swiper-slide');
-console.log(slides.length);
+// console.log(slides.length);
 const wrapper = document.querySelector('.swiper-wrapper');
-console.log(wrapper.childNodes)
+// console.log(wrapper.childNodes)
+const topsButtons = document.querySelectorAll('.tops__button');
+const topsUsers = document.querySelectorAll('.tops__users');
 
-window.addEventListener('resize', function(){
-  console.log(screenWidth)
-})
+// window.addEventListener('resize', function(){
+//   console.log(screenWidth)
+// })
 
 // console.log(slides.length)
 
@@ -116,3 +118,27 @@ const swiper1 = new Swiper('.categories__slider', {
     el: '.swiper-scrollbar',
   },
 });
+
+topsButtons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    let currentButton = button;
+    let usersId = currentButton.getAttribute("data-users");
+    console.log(usersId)
+    let currentUsers = document.querySelector(usersId);
+
+    if (!currentButton.classList.contains('tops__button_active')) {
+      topsButtons.forEach(function (button) {
+      button.classList.remove('tops__button_active');
+      });
+
+      topsUsers.forEach(function (users) {
+        users.classList.remove('tops__users_active');
+      });
+
+      currentButton.classList.add('tops__button_active');
+      currentUsers.classList.add('tops__users_active');
+    }
+  });
+});
+
+document.querySelector('.tops__button').click();
