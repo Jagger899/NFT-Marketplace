@@ -963,6 +963,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 1450px) {
   .swiper-button-left,
@@ -1217,6 +1218,7 @@ a {
 .tops__users-button {
   margin: 0 auto;
   width: 180px;
+  cursor: pointer;
 }
 @media (max-width: 480px) {
   .tops__users-button {

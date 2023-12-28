@@ -246,7 +246,7 @@
   &__users-button {
     margin: 0 auto;
     width: 180px;
-    
+    cursor: pointer;
     @include on480 {
       color: $white-text-color;
     }
