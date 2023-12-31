@@ -208,6 +208,73 @@ const swiper2 = new Swiper('.tranding__slider', {
   },
 });
 
+const swiper3 = new Swiper('.insights__slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // slidesPerView: 3,
+  // spaceBetween:60,
+  breakpoints:{
+    0: {
+      slidesPerView: 1,
+      spaceBetween:40,
+    },
+    // 400: {
+    //   slidesPerView: 1,
+    //   spaceBetween:20,
+    // },
+    // 500: {
+    //   slidesPerView: 1.3,
+    //   spaceBetween:40,
+    // },
+    600: {
+      slidesPerView: 1.3,
+      spaceBetween:20,
+    },
+    // 700: {
+    //   slidesPerView: 1.8,
+    //   spaceBetween:20,
+    // },
+    800: {
+      slidesPerView: 1.5,
+      spaceBetween:10,
+    },
+    // 900: {
+    //   slidesPerView: 2.2,
+    //   spaceBetween:10,
+    // },
+    1000: {
+      slidesPerView: 2,
+      spaceBetween:10,
+    },
+    // 1100: {
+    //   slidesPerView: 2.8, 
+    //   spaceBetween:20,
+    // },
+    1200: {
+      slidesPerView: 2.2,
+      spaceBetween:20,
+    },
+    1300: {
+      slidesPerView: 2.4,
+      spaceBetween:20,
+    },
+    1400: {
+      slidesPerView: 2.8,
+      spaceBetween:10,
+    },
+    1500: {
+    slidesPerView: 3,
+    spaceBetween:10,
+    },
+    1900: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    }
+  },
+
+});
+
 
 topsButtons.forEach(function (button) {
   button.addEventListener('click', function () {
