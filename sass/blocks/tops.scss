@@ -1,6 +1,6 @@
 .tops {
   background-color: $middle-black-color;
-  padding: 120px 15px 208px;
+  padding: 120px 15px 86px;
   font-size: 16px;
 
   @include on480 {
@@ -135,6 +135,11 @@
       gap: 8px;
     }
 
+         &_second {
+           @include on480 {
+             display: none;
+           }
+         }
 
   }
   

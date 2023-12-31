@@ -53,6 +53,9 @@
     padding: 10px 0 51px;
     border-radius: 50px;
     margin-bottom: 40px;
+    @include on480 {
+      
+    }
   }
 
   &__card-photo {
@@ -127,10 +130,17 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 300ms linear;
+
+  &:hover {
+    background-color: $light-blue-color;
+  }
 
   @include on1450 {
     display: none;
   }
+
+
 }
 
 .swiper-button-left {

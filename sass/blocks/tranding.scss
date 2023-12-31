@@ -1,0 +1,147 @@
+.tranding {
+  padding: 124px 0 133px;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+  }
+
+
+  &__title {
+    margin-bottom: 72px;
+    margin-left: 7px;
+
+    @include on1899 {
+      margin-left: 0;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+    margin-left: 8px;
+
+    @include on1899 {
+      margin-left: 0;
+    }
+  }
+  
+  &__card {
+    background-color: $middle-black-color;
+    border-radius: 30px;
+    width: 383px;
+    margin-bottom: 38px;
+
+    @include on480 {
+      width: 327px;
+    }
+   
+  }
+
+  &__card-img {
+    @include on480 {
+      width: 327px;
+    }
+  }
+
+  &__card-info-box {
+    padding: 0 13px 13px;
+  }
+
+  &__card-photo {
+    margin-bottom: 19px;
+  }
+
+  &__card-title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+  }
+
+  &__card-hash {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 31px;
+    letter-spacing: 0.64px;
+  }
+
+  &__card-info {
+    background-color: $light-black-color;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  &__card-info-descr {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $grey-text-color;
+    margin-bottom: 12px;
+    letter-spacing: 0.64px;
+  }
+
+  &__card-info-number {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  &__swiper-wrapper {
+    position: static;
+  }
+
+  &__swiper-slide {
+    position: static;
+  }
+    &__swiper-pagination {
+      display: none;
+  
+      @include on1450 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+    &__swiper-pagination .swiper-pagination-bullet {
+      border-radius: 16px;
+      border: 1px solid #FFF;
+      width: 16px;
+      height: 16px;
+    }
+  
+    // &__swiper-pagination .swiper-pagination-bullet:nth-child(-n + 4){
+    //  display: none;
+    // }
+  
+    &__swiper-pagination .swiper-pagination-bullet-active {
+      border-radius: 16px;
+      background: $light-blue-color;
+      border: none;
+    }
+}
+
+.swiper-button-left{
+  &_trand {
+    top: 56%;
+    left:-10px;
+  }
+}
+.swiper-button-right {
+  &_trand {
+    top: 53%;
+    right: -31px;
+
+    @include on1700 {
+      right: -15px;
+    }
+  }
+
+}
+

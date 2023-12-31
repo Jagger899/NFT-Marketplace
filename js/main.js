@@ -129,6 +129,86 @@ const swiper1 = new Swiper('.categories__slider', {
   },
 });
 
+const swiper2 = new Swiper('.tranding__slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // slidesPerView: 4,
+  // spaceBetween:32,
+  breakpoints:{
+    0: {
+      slidesPerView: 1,
+      spaceBetween:40,
+    },
+    400: {
+      slidesPerView: 1.2,
+      spaceBetween:20,
+    },
+    500: {
+      slidesPerView: 1.3,
+      spaceBetween:40,
+    },
+    600: {
+      slidesPerView: 1.5,
+      spaceBetween:20,
+    },
+    700: {
+      slidesPerView: 1.8,
+      spaceBetween:20,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween:10,
+    },
+    900: {
+      slidesPerView: 2.2,
+      spaceBetween:10,
+    },
+    1000: {
+      slidesPerView: 2.5,
+      spaceBetween:10,
+    },
+    1100: {
+      slidesPerView: 2.8, 
+      spaceBetween:20,
+    },
+    1200: {
+      slidesPerView: 2.8,
+      spaceBetween:20,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween:20,
+    },
+    1400: {
+      slidesPerView: 3.5,
+      spaceBetween:10,
+    },
+    1700: {
+      slidesPerView: 4,
+      spaceBetween: 29,
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.tranding__swiper-pagination',
+    clickable: true,
+    // dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
 topsButtons.forEach(function (button) {
   button.addEventListener('click', function () {
     let currentButton = button;

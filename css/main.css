@@ -966,6 +966,11 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 300ms linear;
+}
+.swiper-button-left:hover,
+.swiper-button-right:hover {
+  background-color: #52FFE0;
 }
 @media (max-width: 1450px) {
   .swiper-button-left,
@@ -994,7 +999,7 @@ a {
 
 .tops {
   background-color: #1D1E22;
-  padding: 120px 15px 208px;
+  padding: 120px 15px 86px;
   font-size: 16px;
 }
 @media (max-width: 480px) {
@@ -1118,6 +1123,11 @@ a {
     gap: 8px;
   }
 }
+@media (max-width: 480px) {
+  .tops__users_second {
+    display: none;
+  }
+}
 .tops__card {
   width: 520px;
   background-color: #2C2D31;
@@ -1225,6 +1235,132 @@ a {
 @media (max-width: 480px) {
   .tops__users-button {
     color: #F8F8F8;
+  }
+}
+
+.tranding {
+  padding: 124px 0 133px;
+  overflow: hidden;
+}
+.tranding__container {
+  position: relative;
+}
+.tranding__title {
+  margin-bottom: 72px;
+  margin-left: 7px;
+}
+@media (max-width: 1899px) {
+  .tranding__title {
+    margin-left: 0;
+  }
+}
+.tranding__slider {
+  overflow: hidden;
+  margin-left: 8px;
+}
+@media (max-width: 1899px) {
+  .tranding__slider {
+    margin-left: 0;
+  }
+}
+.tranding__card {
+  background-color: #1D1E22;
+  border-radius: 30px;
+  width: 383px;
+  margin-bottom: 38px;
+}
+@media (max-width: 480px) {
+  .tranding__card {
+    width: 327px;
+  }
+}
+@media (max-width: 480px) {
+  .tranding__card-img {
+    width: 327px;
+  }
+}
+.tranding__card-info-box {
+  padding: 0 13px 13px;
+}
+.tranding__card-photo {
+  margin-bottom: 19px;
+}
+.tranding__card-title {
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+}
+.tranding__card-hash {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 31px;
+  letter-spacing: 0.64px;
+}
+.tranding__card-info {
+  background-color: #2C2D31;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0 24px;
+}
+.tranding__card-info-descr {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #818698;
+  margin-bottom: 12px;
+  letter-spacing: 0.64px;
+}
+.tranding__card-info-number {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+}
+.tranding__swiper-wrapper {
+  position: static;
+}
+.tranding__swiper-slide {
+  position: static;
+}
+.tranding__swiper-pagination {
+  display: none;
+}
+@media (max-width: 1450px) {
+  .tranding__swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tranding__swiper-pagination .swiper-pagination-bullet {
+  border-radius: 16px;
+  border: 1px solid #FFF;
+  width: 16px;
+  height: 16px;
+}
+.tranding__swiper-pagination .swiper-pagination-bullet-active {
+  border-radius: 16px;
+  background: #52FFE0;
+  border: none;
+}
+
+.swiper-button-left_trand {
+  top: 56%;
+  left: -10px;
+}
+
+.swiper-button-right_trand {
+  top: 53%;
+  right: -31px;
+}
+@media (max-width: 1700px) {
+  .swiper-button-right_trand {
+    right: -15px;
   }
 }
 
