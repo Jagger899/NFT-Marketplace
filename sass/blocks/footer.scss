@@ -1,0 +1,108 @@
+.footer {
+  background-color: $middle-black-color;
+  padding: 48px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 36px;
+    gap: 11px;
+  
+    @include on375 {
+      font-size: 24px;
+      gap: 4px;
+    }
+  }
+
+  &__info-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  &__info {
+
+    &_first {
+      width: 231px;
+    }
+  }
+
+  &__info-title {
+    font-family: "Monument Extended Bold";
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  &__info-link {
+    font-size: 16px;
+    line-height: 187%;
+    font-weight: 400;
+    font-family: 'Red Rose', serif;
+  }
+
+  &__sign-up-box {
+    position: relative;
+  }
+
+  &__sign-up {
+    padding: 80px 48px;
+    background-color: $light-blue-color;
+    border-radius: 30px;
+  }
+
+  &__sign-up-title {
+    color: $middle-black-color;
+    font-size: 24px;
+    letter-spacing: 0.96px;
+    font-family: "Monument Extended Bold";
+    max-width: 399px;
+    margin-bottom: 15px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__form-input {
+    width: 359px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__form-button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__sign-up-box img {
+    position: absolute;
+    right: -22px;
+    bottom: -24px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rights-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-links {
+    display: flex;
+    gap: 24px;
+  }
+}
