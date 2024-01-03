@@ -2,11 +2,35 @@
   background-color: $middle-black-color;
   padding: 48px 0;
 
+  @include on480 {
+    padding: 41px 0;
+  }
+
+  &__container {
+    padding: 0 94px 0 114px;
+
+    @include on1450 {
+      padding: 0 15px;
+    }
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 58px;
+
+    @include on1150 {
+      gap: 20px;
+    }
+
+    @include on900 {
+      flex-direction: column-reverse;
+    }
+
+    @include on480 {
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -15,6 +39,10 @@
     font-family: 'Gilroy', sans-serif;
     font-size: 36px;
     gap: 11px;
+
+    @include on1150 {
+      display: none;
+    }
   
     @include on375 {
       font-size: 24px;
@@ -26,9 +54,19 @@
     display: flex;
     justify-content: flex-start;
     gap: 32px;
+    margin-right: 70px;
+
+    @include on700 {
+      text-align: center;
+    }
+
+    @include on480 {
+      display: none;
+    }
   }
 
   &__info {
+    // margin-right: 70px;
 
     &_first {
       width: 231px;
@@ -43,19 +81,47 @@
 
   &__info-link {
     font-size: 16px;
-    line-height: 187%;
+    line-height: 190%;
     font-weight: 400;
     font-family: 'Red Rose', serif;
+    display: inline-block;
+    transition: all 300ms linear;
+
+    &:hover {
+      transform: scale(1.2);
+      color: #3FC9B0;
+    }
   }
 
   &__sign-up-box {
     position: relative;
+    width: 495px;
+
+    @include on700 {
+      width: 327px;
+      margin-bottom: 32px;
+    }
   }
 
   &__sign-up {
-    padding: 80px 48px;
+    padding: 90px 48px 70px;
     background-color: $light-blue-color;
     border-radius: 30px;
+
+    @include on1150 {
+      padding: 50px 15px 38px;
+    }
+
+    @include on480 {
+      padding: 60px 48px;
+      border-radius: 20px;
+    }
+
+    // @include on900 {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
   }
 
   &__sign-up-title {
@@ -65,18 +131,42 @@
     font-family: "Monument Extended Bold";
     max-width: 399px;
     margin-bottom: 15px;
+    // line-height: 120%;
+
+    @include on900 {
+      font-size: 20px;
+    }
+
+    @include on480 {
+      width: 231px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 150%;
+    }
   }
 
   &__form {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 21px;
   }
 
   &__form-input {
     width: 359px;
     background-color: transparent;
     border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $middle-black-color;
+      font-size: 16px;
+      font-family: 'Red Rose', serif;
+    }
+
+    @include on1050 {
+      max-width: 250px;
+    }
   }
 
   &__form-button{
@@ -85,15 +175,31 @@
     cursor: pointer;
   }
 
+  &__form-line {
+    background-color: #3FC9B0;
+    width: 100%;
+    height: 1px;
+  }
+
   &__sign-up-box img {
     position: absolute;
     right: -22px;
     bottom: -24px;
+
+    @include on1150 {
+      display: none;
+    }
   }
 
   &__bottom {
     display: flex;
     justify-content: space-between;
+
+    @include on700 {
+      flex-direction: column-reverse;
+      // justify-content: center;
+      align-items: center;
+    }
   }
 
   &__rights-links {
@@ -104,5 +210,106 @@
   &__social-links {
     display: flex;
     gap: 24px;
+
+    @include on480 {
+      display: none;
+    }
+  }
+
+  &__social-links svg {
+
+    transition: fill 300ms linear;
+
+    &:hover {
+      fill: $light-blue-color;
+    }
+
+    @include on800 {
+      &:nth-child(-n + 2) {
+        display: none;
+    }
+
+    @include on700 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+  &__social-links-mobile {
+    display: none;
+    @include on480 {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__social-links-mobile svg {
+    transition: fill 300ms linear;
+
+    &:hover {
+      fill: $light-blue-color;
+    }
+  }
+  &__text {
+    font-size: 16px;
+
+    @include on480 {
+      display: none;
+    }
+  }
+
+  &__rights-link {
+    font-size: 16px;
+  }
+
+  &__info-mobile {
+    display: none;
+
+    @include on480 {
+      display: block;
+      font-family: 'Inter', sans-serif;
+    }
+  }
+
+  &__info-mobile-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__info-mobile-text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 172px;
+    line-height: 188%;
+    margin-bottom: 40px;
+  }
+
+  &__info-mobile-priv{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  &__rights-links {
+    @include on480 {
+      display: none;
+    }
+  }
+
+  &__text-mobile {
+    display: none;
+    @include on480 {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
 }
