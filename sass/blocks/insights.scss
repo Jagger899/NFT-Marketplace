@@ -47,6 +47,7 @@
     // position: relative;
     @include on550 {
       margin: 0 auto;
+      width: 470px;
     }
     @include on480 {
       width: 315px;

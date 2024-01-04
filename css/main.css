@@ -1450,6 +1450,7 @@ a {
 @media (max-width: 550px) {
   .insights__card {
     margin: 0 auto;
+    width: 470px;
   }
 }
 @media (max-width: 480px) {
