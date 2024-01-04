@@ -34,6 +34,10 @@
     @include on480 {
       width: 327px;
     }
+
+    @include on400 {
+      margin: 0 auto;
+    }
    
   }
 

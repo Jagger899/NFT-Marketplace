@@ -45,6 +45,9 @@
   &__card {
     width: 500px;
     // position: relative;
+    @include on550 {
+      margin: 0 auto;
+    }
     @include on480 {
       width: 315px;
       margin: 0 auto;

@@ -1,5 +1,4 @@
 const body = document.querySelector('.body');
-console.log(body);
 // body.classList.add('body_lock');
 const header = document.getElementById('header');
 const mobileMenu = document.getElementById('mobile-menu-open');
@@ -37,9 +36,9 @@ window.addEventListener('scroll', function () {
 
 mobileMenu.addEventListener('click', function (event) {
   event.preventDefault();
-  mobileMenuList.classList.toggle('header__mobile-menu-list_active');
+  mobileMenuList.classList.toggle('header__mobile-menu_active');
 
-  if (mobileMenuList.classList.contains('header__mobile-menu-list_active')) {
+  if (mobileMenuList.classList.contains('header__mobile-menu_active')) {
     firstLine.classList.add('header__mobile-menu-line_rotate1');
     secondLine.classList.add('header__mobile-menu-line_none');
     thirdLine.classList.add('header__mobile-menu-line_rotate2');

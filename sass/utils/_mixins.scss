@@ -97,8 +97,20 @@
   }
 }
 
+@mixin on400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
 @mixin on376 {
   @media (min-width: 376px) {
+    @content;
+  }
+}
+
+@mixin on250 {
+  @media (max-height: 250px) {
     @content;
   }
 }
