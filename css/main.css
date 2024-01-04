@@ -224,14 +224,8 @@ a {
 
 .main {
   margin-top: 165px;
-  overflow: hidden;
 }
 
-@media (max-width: 375px) {
-  .main {
-    margin-top: 155px;
-  }
-}
 .section__title {
   font-size: 30px;
   font-family: "Monument Extended Bold", sans-serif;
@@ -240,10 +234,20 @@ a {
   letter-spacing: 1.7px;
 }
 
+@media (max-width: 670px) {
+  .main {
+    overflow: hidden;
+  }
+}
 @media (max-width: 480px) {
   .section__title {
     font-size: 24px;
     text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    margin-top: 155px;
   }
 }
 .body_lock {
@@ -257,7 +261,6 @@ a {
   right: 0;
   left: 0;
   z-index: 7;
-  width: 100%;
   transition: background-color 300ms linear;
 }
 .header_fixed {
@@ -970,6 +973,11 @@ a {
 }
 .categories__swiper-slide {
   position: static;
+}
+@media (max-width: 480px) {
+  .categories__swiper-slide_del {
+    display: none;
+  }
 }
 
 .swiper-button-left,

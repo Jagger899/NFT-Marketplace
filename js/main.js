@@ -231,7 +231,7 @@ const swiper3 = new Swiper('.insights__slider', {
     //   spaceBetween:40,
     // },
     600: {
-      slidesPerView: 1.3,
+      slidesPerView: 1.2,
       spaceBetween:20,
     },
     // 700: {
@@ -247,7 +247,7 @@ const swiper3 = new Swiper('.insights__slider', {
     //   spaceBetween:10,
     // },
     1000: {
-      slidesPerView: 2,
+      slidesPerView: 1.8,
       spaceBetween:10,
     },
     // 1100: {
@@ -263,14 +263,19 @@ const swiper3 = new Swiper('.insights__slider', {
       spaceBetween:20,
     },
     1400: {
-      slidesPerView: 2.8,
+      slidesPerView: 2.6,
       spaceBetween:10,
     },
     1500: {
-    slidesPerView: 3,
+    slidesPerView: 2.8,
     spaceBetween:10,
     },
-    1900: {
+
+    1700: {
+    slidesPerView: 2.9,
+    spaceBetween:10,
+    },
+    1800: {
       slidesPerView: 3,
       spaceBetween: 60,
     }
