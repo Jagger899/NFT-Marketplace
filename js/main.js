@@ -1,14 +1,17 @@
+const body = document.querySelector('.body');
+console.log(body);
+// body.classList.add('body_lock');
 const header = document.getElementById('header');
 const mobileMenu = document.getElementById('mobile-menu-open');
 const mobileMenuList = document.getElementById('mobile-menu-list');
 const firstLine = document.getElementById('first-line');
-console.log(firstLine)
+
 const secondLine = document.getElementById('second-line');
-console.log(secondLine)
+
 const thirdLine = document.getElementById('third-line');
-console.log(thirdLine)
+
 const screenWidth = window.screen.width;
-console.log(screenWidth);
+
 const slides = document.querySelectorAll('.categories__swiper-slide');
 // console.log(slides.length);
 const wrapper = document.querySelector('.swiper-wrapper');
@@ -37,18 +40,19 @@ mobileMenu.addEventListener('click', function (event) {
   mobileMenuList.classList.toggle('header__mobile-menu-list_active');
 
   if (mobileMenuList.classList.contains('header__mobile-menu-list_active')) {
-    console.log('yes')
     firstLine.classList.add('header__mobile-menu-line_rotate1');
     secondLine.classList.add('header__mobile-menu-line_none');
     thirdLine.classList.add('header__mobile-menu-line_rotate2');
     header.classList.add('header_active');
+    body.classList.add('body_lock');
   } else {
     firstLine.classList.remove('header__mobile-menu-line_rotate1');
     secondLine.classList.remove('header__mobile-menu-line_none');
     thirdLine.classList.remove('header__mobile-menu-line_rotate2');
     header.classList.remove('header_active');
+    body.classList.remove('body_lock');
   }
-})
+});
 
 const swiper1 = new Swiper('.categories__slider', {
   // Optional parameters
@@ -280,7 +284,7 @@ topsButtons.forEach(function (button) {
   button.addEventListener('click', function () {
     let currentButton = button;
     let usersId = currentButton.getAttribute("data-users");
-    console.log(usersId)
+    
     let currentUsers = document.querySelector(usersId);
 
     if (!currentButton.classList.contains('tops__button_active')) {

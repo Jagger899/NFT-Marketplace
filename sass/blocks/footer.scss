@@ -85,7 +85,7 @@
     font-weight: 400;
     font-family: 'Red Rose', serif;
     display: inline-block;
-    transition: all 300ms linear;
+    transition: color 300ms linear, transform 300ms linear;
 
     &:hover {
       transform: scale(1.2);

@@ -75,7 +75,8 @@
     outline: none;
     padding: 20px 47px;
     white-space: nowrap;
-    transition: background-color 300ms linear;border-radius: 20px;
+    transition: background-color 300ms linear;
+    border-radius: 20px;
     position: absolute;
 
 
@@ -135,11 +136,11 @@
       gap: 8px;
     }
 
-         &_second {
-           @include on480 {
-             display: none;
-           }
-         }
+    &_second {
+      @include on700 {
+        display: none;
+      }
+    }
 
   }
   
@@ -198,7 +199,7 @@
 
   &__card-right {
    @include on480 {
-    margin-left:38px;
+    margin-left:78px;
     margin-top: -10px;
    }
   }

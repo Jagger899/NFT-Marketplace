@@ -85,6 +85,12 @@
   }
 }
 
+@mixin on500 {
+  @media (max-height: 500px) {
+    @content;
+  }
+}
+
 @mixin on480 {
   @media (max-width: 480px) {
     @content;
