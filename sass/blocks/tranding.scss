@@ -4,6 +4,10 @@
 
   &__container {
     position: relative;
+
+    @include on1700 {
+      padding-right: 0;
+    }
   }
 
 
@@ -106,7 +110,7 @@
     &__swiper-pagination {
       display: none;
   
-      @include on1450 {
+      @include on1700 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -133,21 +137,25 @@
 
 .swiper-button-left{
   &_trand {
-    top: 56%;
+    top: 50%;
     left:-10px;
+
 
     @include on1700 {
       left: 5px;
+      display: none;
     }
   }
 }
 .swiper-button-right {
   &_trand {
-    top: 53%;
+    top: 50%;
     right: -31px;
+    // display: none;
 
     @include on1700 {
       right: 4px;
+      display: none;
     }
   }
 
